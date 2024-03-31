@@ -1,23 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Myhome from   './pages/Home';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import '@fontsource/roboto/300.css'
 import "./pages/style.css";
-import Bspage from './pages/Bspage';
-import Rbspage from './pages/Rbspage';
-import Umpage from './pages/Umpage';
+import Pagefooter from './modules/shares/Pagefooter';
+import Pagenavbar from './modules/shares/Pagenavbar';
+import Landingpage from './modules/dashboard/Landingpage';
+import { BrowserRouter, Routes,Route } from 'react-router-dom';
+import Aboutpage from './modules/dashboard/Aboutpage';
+import Contactuspage from './modules/dashboard/Contactuspage';
+import Formpage from './modules/dashboard/Formpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Myhome></Myhome>
-    <Bspage></Bspage>
-    <Rbspage></Rbspage>
-    <Umpage></Umpage>
-
+    <BrowserRouter>
+    <Pagenavbar/>
+      <Routes>
+        <Route path='' element={<Landingpage/>}></Route>
+        <Route path='about' element={<Aboutpage/>}></Route>
+        <Route path='contact' element={<Contactuspage/>}></Route>
+        <Route path='login' element={<Formpage/>}></Route>
+      </Routes>
+  <Pagefooter/>
+  </BrowserRouter>
   </React.StrictMode>
 );
 
