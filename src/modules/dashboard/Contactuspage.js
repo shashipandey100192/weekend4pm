@@ -1,20 +1,42 @@
 import React from 'react'
+import Networkfetch from './Networkfetch';
+import Networkaxios from './Networkaxios';
+
+
+
 
 function Contactuspage() {
+
+const mydata = [
+  {name:'ravi',age:10,height:'5ft'},
+  {name:'mohan',age:10,height:'5ft'},
+  {name:'ravi',age:10,height:'5ft'},
+  {name:'ravi',age:10,height:'5ft'},
+  {name:'ravi',age:10,height:'5ft'},
+  {name:'ravi',age:10,height:'5ft'},
+  {name:'ravi',age:10,height:'5ft'},
+  {name:'ravi',age:10,height:'5ft'}
+];
+
+
   return (
-    <main>
-    <section className="py-5 text-center container">
-      <div className="row py-lg-5">
-        <div className="col-lg-6 col-md-8 mx-auto">
-          <h1 className="fw-light">Contact us page</h1>
-          <p className="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-          <p>
-            <a href="#" className="btn btn-primary my-2">Main call to action</a>
-            <a href="#" className="btn btn-secondary my-2">Secondary action</a>
-          </p>
-        </div>
+    <main style={{marginTop:'100px'}} className='border p-3'>
+
+      <div className='container'>
+        <div className='row'>
+          {mydata.map((d)=>{
+            return(
+              <div className='col-md-3 border'>
+                <h1>Name: {d.name}</h1>
+                <h1>Age: {d.age}</h1>
+                <h1>Height: {d.height}</h1>
+              </div>
+            )
+          })}
       </div>
-    </section>
+      </div>
+      <Networkfetch/>
+      <Networkaxios/>
     </main>
   )
 }
