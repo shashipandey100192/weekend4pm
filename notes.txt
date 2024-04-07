@@ -1,0 +1,61 @@
+1) install node
+2) install git bash
+3) install vscode
+4) create react project
+	npx create-react-app weekday4pm
+5) install typescript
+	npm install -g typescript
+6) react UI
+	1) custom (html,css)
+	2) bootstrap
+	3) react bootstrap
+	4) Material UI
+7) bootstrap
+	1) npm install bootstrap 		// latest version
+	2) import
+8) react bootstrap
+	1) npm install react-bootstrap
+	2) import 
+9) Material UI
+	1) npm install @mui/material @emotion/react @emotion/styled
+	2) npm install @mui/material @mui/styled-engine-sc styled-components
+	3) npm install @fontsource/roboto
+	4) npm install @mui/x-data-grid
+--------------------------------------------------------------------
+10) icon 
+	1) npm install react-icons --save
+	2) import 
+11) routing module
+	1) npm install react-router-dom
+	2) import  BrowserRouter, Routes,Route , Link
+----------------------------------------------------------------
+12) inline css 
+13) network cell
+	1) fetch()
+	2) axios
+		1) npm install axios
+		2) import
+14) data binding, data mapping, template binding
+------------------------------------------------------------------
+15) form validation ( react hooks form)
+	1) npm install react-hook-form
+	2) import  {useForm}
+		
+1) react hooks (function)
+     can't use
+	1) Don’t call Hooks inside loops
+ 	2) conditions
+	3) nested functions
+
+
+
+
+
+
+
+
+
+
+
+	
+	
