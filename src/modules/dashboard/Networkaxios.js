@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 
 function Networkaxios() {
     const [data,fdata]=useState([])
@@ -9,6 +9,10 @@ function Networkaxios() {
             fdata(d.data)
         })
     }
+
+    useEffect(()=>{
+        mygetaxios()
+    },[])
     
     
         return ( 
@@ -17,7 +21,7 @@ function Networkaxios() {
                 <input type='button' value="fetchapi" onClick={mygetaxios}/>
                     {data.map((obj)=>{
                         return(
-                            <section className='col-md-3'>
+                            <section className='col-md-3' key={obj.id}>
                             <div className='border p-2 bg-dark  text-white m-2 '>
                             <p className='h2'>Id: {obj.id}</p>
                             <p className='h3'>Name:{obj.name}</p>

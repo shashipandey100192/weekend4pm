@@ -26,6 +26,9 @@ function Pagenavbar() {
           <li className="nav-item">
             <Link className="nav-link" to="myforms">forms</Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="mainpage">props</Link>
+          </li>
 
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

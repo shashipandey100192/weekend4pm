@@ -41,15 +41,15 @@ const mydata = (d)=>{
             <section className='col-md-6'>
             <div class="mb-3">
                 <label class="form-label">Phone No</label>
-                <input type="text" class="form-control" {...register("phone",{required:true})}/>
+                <input type="text" class="form-control" {...register("phone",{required:true,pattern: /^[0-9]{10}/})}/>
                 {errors.phone && <div class="form-text text-danger">phone is required</div>}
             </div>
             </section>
             <section className='col-md-6'>
             <div class="mb-3">
                 <label class="form-label">Address</label>
-               <textarea className='form-control' {...register("address")}>default value</textarea>
-                <div class="form-text text-danger">field is required</div>
+               <textarea className='form-control' {...register("address",{required:true})}></textarea>
+               {errors.address && <div class="form-text text-danger">address is required</div>}
             </div>
             </section>
             <section className='col-md-6'>

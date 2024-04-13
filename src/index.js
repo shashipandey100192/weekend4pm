@@ -12,6 +12,7 @@ import Aboutpage from './modules/dashboard/Aboutpage';
 import Contactuspage from './modules/dashboard/Contactuspage';
 import Formpage from './modules/dashboard/Formpage';
 import Myforms from './modules/dashboard/Myforms';
+import Mymain from './modules/dashboard/Mymain';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,6 +26,7 @@ root.render(
         <Route path='myapi' element={<Contactuspage/>}></Route>
         <Route path='login' element={<Formpage/>}></Route>
         <Route path='myforms' element={<Myforms/>}></Route>
+        <Route path='mainpage' element ={<Mymain/>}/>
         
       </Routes>
   <Pagefooter/>

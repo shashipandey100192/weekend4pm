@@ -21,7 +21,7 @@ const mygetdata = ()=>{
             <input type='button' value="fetchapi" onClick={mygetdata}/>
                 {data.map((obj)=>{
                     return(
-                        <section className='col-md-3'>
+                        <section className='col-md-3' key={obj.id}>
                         <div className='border p-2 bg-info m-2'>
                         <p>Id: {obj.id}</p>
                         <p>Name:{obj.name}</p>
