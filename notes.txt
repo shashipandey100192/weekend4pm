@@ -47,7 +47,17 @@
  	2) conditions
 	3) nested functions
 
-
+Note:
+	replace 	 a	Link
+	replace		href	to
+	replace		class	className
+	element must have close
+-------------------------------------------
+16) key // unique data
+17) props ( props driling, pass data )
+-------------------------------------------------
+18) param routing
+	useParams()
 
 
 
