@@ -23,75 +23,75 @@ function Formpage() {
                 <h1 className='text-center pb-3'>Registor Page</h1>
             </div>
             <div className='col-sm-4'>
-            <div class="mb-3">
-                <label class="form-label">Name</label>
-                <input type="text" class="form-control" onInput={changename}/>
+            <div className="mb-3">
+                <label className="form-label">Name</label>
+                <input type="text" className="form-control" onInput={changename}/>
                 </div>
             </div>
             <div className='col-sm-4'>
-            <div class="mb-3">
-                <label class="form-label">City</label>
-                <input type="text" class="form-control"/>
+            <div className="mb-3">
+                <label className="form-label">City</label>
+                <input type="text" className="form-control"/>
                 </div>
             </div>
             <div className='col-sm-4'>
-            <div class="mb-3">
-                <label class="form-label">Email id</label>
-                <input type="text" class="form-control"/>
+            <div className="mb-3">
+                <label className="form-label">Email id</label>
+                <input type="text" className="form-control"/>
                 </div>
             </div>
             <div className='col-sm-4'>
-            <div class="mb-3">
-                <label class="form-label">Example label</label>
-                <input type="text" class="form-control"/>
+            <div className="mb-3">
+                <label className="form-label">Example label</label>
+                <input type="text" className="form-control"/>
                 </div>
             </div>
             <div className='col-sm-4'>
-            <div class="mb-3">
-                <label class="form-label">Example label</label>
-                <input type="text" class="form-control"/>
+            <div className="mb-3">
+                <label className="form-label">Example label</label>
+                <input type="text" className="form-control"/>
                 </div>
             </div>
             <div className='col-sm-4'>
-            <div class="mb-3">
-                <label class="form-label">Example label</label>
-                <input type="text" class="form-control"/>
+            <div className="mb-3">
+                <label className="form-label">Example label</label>
+                <input type="text" className="form-control"/>
                 </div>
             </div>
             <div className='col-sm-4'>
-            <div class="mb-3">
-                <label class="form-label">Example label</label>
-                <input type="text" class="form-control"/>
+            <div className="mb-3">
+                <label className="form-label">Example label</label>
+                <input type="text" className="form-control"/>
                 </div>
             </div>
             <div className='col-sm-4'>
-            <div class="mb-3">
-                <label class="form-label">Example label</label>
-                <input type="text" class="form-control"/>
+            <div className="mb-3">
+                <label className="form-label">Example label</label>
+                <input type="text" className="form-control"/>
                 </div>
             </div>
             <div className='col-sm-4'>
-            <div class="mb-3">
-                <label class="form-label">Example label</label>
-                <input type="text" class="form-control"/>
+            <div className="mb-3">
+                <label className="form-label">Example label</label>
+                <input type="text" className="form-control"/>
                 </div>
             </div>
             <div className='col-sm-4'>
-            <div class="mb-3">
-                <label class="form-label">Example label</label>
-                <input type="text" class="form-control"/>
+            <div className="mb-3">
+                <label className="form-label">Example label</label>
+                <input type="text" className="form-control"/>
                 </div>
             </div>
             <div className='col-sm-4'>
-            <div class="mb-3">
-                <label class="form-label">Example label</label>
-                <input type="text" class="form-control"/>
+            <div className="mb-3">
+                <label className="form-label">Example label</label>
+                <input type="text" className="form-control"/>
                 </div>
             </div>
             <div className='col-sm-4'>
-            <div class="mb-3">
-                <label class="form-label">Example label</label>
-                <input type="text" class="form-control"/>
+            <div className="mb-3">
+                <label className="form-label">Example label</label>
+                <input type="text" className="form-control"/>
                 </div>
             </div>
         </div>
@@ -100,11 +100,12 @@ function Formpage() {
             <div className='col-12'>
             <div className="p-5 bg-body-tertiary rounded-3">
                 <h1 className="text-body-emphasis">Basic jumbotron</h1>
-                <p className="lead">
-                
                 <h6>Your Name: {name}</h6>
                 <h6>city</h6>
                 <h6>email</h6>
+                <p className="lead">
+                
+                
 [Your Address]
 [City, State, ZIP Code]
 [Your Email Address]

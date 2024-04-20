@@ -58,6 +58,16 @@ Note:
 -------------------------------------------------
 18) param routing
 	useParams()
+------------------------------------------------------
+19) chart( graph)
+	1) npm install recharts
+	2) import
+20) types of page
+	1) full page
+	2) blank page
+
+
+	
 
 
 
