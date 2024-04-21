@@ -65,6 +65,11 @@ Note:
 20) types of page
 	1) full page
 	2) blank page
+------------------------------
+21) storage
+	local
+	session
+22)error page (404)  not found
 
 
 	

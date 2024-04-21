@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Pagenavbar() {
+  const [err1,seterr1]=useState("abc");
+const abc = ()=>{
+  seterr1(localStorage.getItem("errorkey"));
+    console.log(localStorage.getItem("errorkey"));
+}
+
+  useEffect(()=>{
+    abc();
+
+  },[])
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary shadow fixed-top">
     <div className="container-fluid">
@@ -34,6 +45,9 @@ function Pagenavbar() {
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="graph">Graphs</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="sdjkfhsjd">faltu</Link>
           </li>
 
           <li className="nav-item dropdown">

@@ -16,6 +16,7 @@ import Mymain from './modules/dashboard/Mymain';
 import Products from './modules/dashboard/Products';
 import Productdetails from './modules/dashboard/Productdetails';
 import Mygraph from './modules/dashboard/Mygraph';
+import Myerrorpage from './modules/shares/Myerrorpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -33,6 +34,7 @@ root.render(
         <Route path='parampage' element ={<Products/>}/>
         <Route path='parampage/details/:id' element ={<Productdetails/>}/>
         <Route path='graph' element={<Mygraph/>}/>
+        <Route path='*' element={<Myerrorpage/>}/>
 
         
         

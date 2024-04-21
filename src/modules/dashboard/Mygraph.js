@@ -10,6 +10,7 @@ import {
   } from "recharts";
 import App from './Mychildgraph.tsx';
 import Child1 from './Child1.js';
+import Mylocaldata from './Mylocaldata.js';
 
   const data = [
     {
@@ -139,6 +140,12 @@ function Mygraph() {
             <div className='col-md-4 p-3 bg-dark'>
                 <App/>
             </div>
+        </div>
+
+        <div className='row'>
+          <div className='col-12'>
+            <Mylocaldata/>
+          </div>
         </div>
 
     </div>
