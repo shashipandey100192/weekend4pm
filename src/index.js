@@ -17,6 +17,11 @@ import Products from './modules/dashboard/Products';
 import Productdetails from './modules/dashboard/Productdetails';
 import Mygraph from './modules/dashboard/Mygraph';
 import Myerrorpage from './modules/shares/Myerrorpage';
+import Courselanding from './modules/dashboard/courses/Courselanding';
+import Coursedefaultpage from './modules/dashboard/courses/Coursedefaultpage';
+import Mongodbpage from './modules/dashboard/courses/Mongodbpage';
+import Reactpage from './modules/dashboard/courses/Reactpage';
+import Expressjspage from './modules/dashboard/courses/Expressjspage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -33,6 +38,17 @@ root.render(
         <Route path='mainpage' element ={<Mymain/>}/>
         <Route path='parampage' element ={<Products/>}/>
         <Route path='parampage/details/:id' element ={<Productdetails/>}/>
+          <Route path='courselist' element={<Courselanding/>}>
+            <Route path='' element={<Coursedefaultpage/>}/>
+            <Route path='mainpage' element={<Coursedefaultpage/>}/>
+              <Route path='mongodb' element={<Mongodbpage/>}/>
+              <Route path='reactjs' element={<Reactpage/>}/>
+              <Route path='expressjs' element={<Expressjspage/>}/>
+              <Route path='*' element={<Myerrorpage/>}/>
+
+          </Route>
+
+
         <Route path='graph' element={<Mygraph/>}/>
         <Route path='*' element={<Myerrorpage/>}/>
 

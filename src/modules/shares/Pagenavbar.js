@@ -47,7 +47,7 @@ const abc = ()=>{
             <Link className="nav-link" to="graph">Graphs</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="sdjkfhsjd">faltu</Link>
+            <Link className="nav-link" to="courselist">Course</Link>
           </li>
 
           <li className="nav-item dropdown">
