@@ -74,6 +74,24 @@ Note:
 23) nested (sub routing)
 	Outlet
 24) pagination
+---------------------------------------------
+25) redux ( redux-toolkit)
+	1) configureStore
+	2) reducer
+	3) Provider
+	4) store
+	5) createSlice
+	6) useSelector/useDispatch
+	7) dispatch
+	8) actions
+	9) state 
+26) redux install
+	1) npm install @reduxjs/toolkit react-redux
+	2) redux devtool add ext
+	3) create  store
+	4) wrap store in application width Provider 
+	
+
 
 
 

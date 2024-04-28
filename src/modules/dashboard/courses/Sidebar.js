@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Sidebar() {
   return (
-    <div className="flex-shrink-0 p-3">
+    <div className="flex-shrink-0 p-3 sidebavfixed fixed-top">
     <a href="/" className="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
       <span className="fs-5 fw-semibold">Collapsible</span>
     </a>

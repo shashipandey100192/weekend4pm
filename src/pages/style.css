@@ -70,3 +70,14 @@ body {
     overflow-y: auto;
   }
   
+  .sidebavfixed
+  {
+    margin-top: 70px;
+    float: left;
+    width: 200px;
+  }
+  .css-1essi2g-MuiDataGrid-columnHeaderRow
+  {
+    background:orange !important;
+    box-shadow: 2px 2px 5px black;
+  }

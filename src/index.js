@@ -22,11 +22,14 @@ import Coursedefaultpage from './modules/dashboard/courses/Coursedefaultpage';
 import Mongodbpage from './modules/dashboard/courses/Mongodbpage';
 import Reactpage from './modules/dashboard/courses/Reactpage';
 import Expressjspage from './modules/dashboard/courses/Expressjspage';
+import { Provider } from 'react-redux';
+import { jsstore } from './modules/redux/mystore';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={jsstore}>
     <BrowserRouter>
     <Pagenavbar/>
       <Routes>
@@ -57,6 +60,7 @@ root.render(
       </Routes>
   <Pagefooter/>
   </BrowserRouter>
+  </Provider>
   </React.StrictMode>
 );
 
