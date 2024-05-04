@@ -24,6 +24,7 @@ import Reactpage from './modules/dashboard/courses/Reactpage';
 import Expressjspage from './modules/dashboard/courses/Expressjspage';
 import { Provider } from 'react-redux';
 import { jsstore } from './modules/redux/mystore';
+import Reduxpage from './modules/redux/Reduxpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -48,8 +49,8 @@ root.render(
               <Route path='reactjs' element={<Reactpage/>}/>
               <Route path='expressjs' element={<Expressjspage/>}/>
               <Route path='*' element={<Myerrorpage/>}/>
-
           </Route>
+          <Route path='reduxpage' element ={<Reduxpage/>}/>
 
 
         <Route path='graph' element={<Mygraph/>}/>
