@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense,lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
@@ -25,6 +25,8 @@ import Expressjspage from './modules/dashboard/courses/Expressjspage';
 import { Provider } from 'react-redux';
 import { jsstore } from './modules/redux/mystore';
 import Reduxpage from './modules/redux/Reduxpage';
+// import Mylazypage from './modules/dashboard/Mylazypage';
+const Mylazypage = lazy(()=> import('./modules/dashboard/Mylazypage'));
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -51,13 +53,13 @@ root.render(
               <Route path='*' element={<Myerrorpage/>}/>
           </Route>
           <Route path='reduxpage' element ={<Reduxpage/>}/>
-
-
         <Route path='graph' element={<Mygraph/>}/>
+        <Route path='lazyloading' element={
+        <Suspense fallback={<h1 style={{marginTop:'100px',backgroundColor:'red',fontSize:'50px'}}>Loding page here...</h1>}>
+            <Mylazypage/>
+        </Suspense>}/>
         <Route path='*' element={<Myerrorpage/>}/>
 
-        
-        
       </Routes>
   <Pagefooter/>
   </BrowserRouter>

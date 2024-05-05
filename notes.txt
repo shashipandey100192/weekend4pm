@@ -90,6 +90,13 @@ Note:
 	2) redux devtool add ext
 	3) create  store
 	4) wrap store in application width Provider 
+----------------------------------------------
+27) lazy loding
+	lazy()
+	fallback
+	suspence
+	
+	
 	
 
 
