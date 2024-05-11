@@ -25,6 +25,9 @@ import Expressjspage from './modules/dashboard/courses/Expressjspage';
 import { Provider } from 'react-redux';
 import { jsstore } from './modules/redux/mystore';
 import Reduxpage from './modules/redux/Reduxpage';
+import Myjsonfile from './modules/jsonserver/Myjsonfile';
+import Myjsonview from './modules/jsonserver/Myjsonview';
+import Myjsonadd from './modules/jsonserver/Myjsonadd';
 // import Mylazypage from './modules/dashboard/Mylazypage';
 const Mylazypage = lazy(()=> import('./modules/dashboard/Mylazypage'));
 
@@ -58,6 +61,9 @@ root.render(
         <Suspense fallback={<h1 style={{marginTop:'100px',backgroundColor:'red',fontSize:'50px'}}>Loding page here...</h1>}>
             <Mylazypage/>
         </Suspense>}/>
+        <Route path='jsonpage' element={<Myjsonfile/>}/>
+        <Route path='addnewrecord' element={<Myjsonadd/>}/>
+        <Route path='jsonpage/:id' element={<Myjsonview/>}/>
         <Route path='*' element={<Myerrorpage/>}/>
 
       </Routes>

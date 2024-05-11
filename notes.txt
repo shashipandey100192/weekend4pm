@@ -95,6 +95,17 @@ Note:
 	lazy()
 	fallback
 	suspence
+	import()
+
+	1) import React, { Suspense,lazy } from 'react';
+	2) const Mylazypage = lazy(()=> import('./modules/dashboard/Mylazypage'));
+	3)  <Route path='lazyloading' element={
+        <Suspense fallback={<h1 style={{marginTop:'100px',backgroundColor:'red',fontSize:'50px'}}>Loding page here...</h1>}>
+            <Mylazypage/>
+        </Suspense>}/>
+
+
+
 	
 	
 	
