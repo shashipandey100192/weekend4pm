@@ -23,7 +23,10 @@ function Myjsonview() {
     <div className='container border custop'>
     <div className='row'>
         <div className='col-12'>
-            <h1>List of Products  <Link to={'/jsonpage'} className='btn btn-info '>Back</Link></h1>
+            <h1>List of Products  
+                <Link to={'/jsonpage'} className='btn btn-info '>Back</Link>
+                <Link to={`/jsonpage/edit/${singler.id}`} className='btn btn-warning ms-3 '>edit</Link>
+                </h1>
             <div className='card'>
                 <h3>{singler.id}</h3>
                 <h3>{singler.name}</h3>

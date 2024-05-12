@@ -28,6 +28,7 @@ import Reduxpage from './modules/redux/Reduxpage';
 import Myjsonfile from './modules/jsonserver/Myjsonfile';
 import Myjsonview from './modules/jsonserver/Myjsonview';
 import Myjsonadd from './modules/jsonserver/Myjsonadd';
+import Myjsonedit from './modules/jsonserver/Myjsonedit';
 // import Mylazypage from './modules/dashboard/Mylazypage';
 const Mylazypage = lazy(()=> import('./modules/dashboard/Mylazypage'));
 
@@ -64,6 +65,7 @@ root.render(
         <Route path='jsonpage' element={<Myjsonfile/>}/>
         <Route path='addnewrecord' element={<Myjsonadd/>}/>
         <Route path='jsonpage/:id' element={<Myjsonview/>}/>
+        <Route path='jsonpage/edit/:id' element={<Myjsonedit/>}></Route>
         <Route path='*' element={<Myerrorpage/>}/>
 
       </Routes>

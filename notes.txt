@@ -103,7 +103,11 @@ Note:
         <Suspense fallback={<h1 style={{marginTop:'100px',backgroundColor:'red',fontSize:'50px'}}>Loding page here...</h1>}>
             <Mylazypage/>
         </Suspense>}/>
-
+28) use of Json server
+	1) npm install -g json-server
+	2) create json file abc.json
+	3) json-server --watch -p 3333 abc.json
+	 
 
 
 	

@@ -2,8 +2,8 @@
   "students": [
     {
       "id": "1",
-      "name": "ravi",
-      "phone": 12365478,
+      "name": "ravi00022222222",
+      "phone": "12365478oooooooo",
       "email": "ravi@gmail.com"
     },
     {
@@ -13,68 +13,22 @@
       "email": "ravi@gmail.com"
     },
     {
-      "id": "3",
-      "name": "ravi",
-      "phone": 12365478,
-      "email": "ravi@gmail.com"
-    },
-    {
       "id": "4",
-      "name": "ravi",
-      "phone": 12365478,
-      "email": "ravi@gmail.com"
+      "name": "ravisingh",
+      "phone": "1236547899999999999",
+      "email": "ravi@gmail.comppppppp"
     },
     {
-      "id": "a7b2",
-      "name": "",
-      "email": "",
-      "phone": ""
-    },
-    {
-      "id": "eb0c",
-      "name": "",
-      "email": "",
-      "phone": ""
-    },
-    {
-      "id": "b129",
-      "phone": "sssssss"
-    },
-    {
-      "id": "2fa6",
-      "phone": "sssssss"
-    },
-    {
-      "id": "881b",
-      "email": "dddyyyyyyyyyy@gmail.com"
-    },
-    {
-      "id": "40d3",
-      "email": "dddyyyyyyyyyy@gmail.com"
-    },
-    {
-      "id": "ba9c",
-      "name": "sdafs",
-      "email": "sdfdf@gmail.com",
-      "phone": "sdf"
-    },
-    {
-      "id": "4487",
-      "name": "sdafs",
-      "email": "sdfdf@gmail.com",
-      "phone": "sdf"
-    },
-    {
-      "id": "5bbc",
+      "id": "f705",
       "name": "kumar",
-      "email": "kumar@gmail.com",
-      "phone": "99999999999"
+      "email": "sdfsdf@gmail.com",
+      "phone": "45484784"
     },
     {
-      "id": "5af0",
-      "name": "mohan singh",
-      "email": "mohan@gmail.com",
-      "phone": "6666666666666"
+      "id": "a6c2",
+      "name": "kumar",
+      "email": "sdfsdf@gmail.com",
+      "phone": "666666666666"
     }
   ]
 }

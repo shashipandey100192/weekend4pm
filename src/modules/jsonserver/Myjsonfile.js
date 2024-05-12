@@ -19,6 +19,14 @@ useEffect(()=>{
     loadalldata()
 },[]);
 
+const delrecord =(id)=>{
+    axios.delete(`http://localhost:3333/students/${id}`).then((d)=>{
+        console.log(d);
+        window.location.reload();
+    })
+}
+
+
 
 
   return (
@@ -46,8 +54,8 @@ useEffect(()=>{
                             <td>{d.email}</td>
                             <td>
                                 <Link to={d.id} className='btn btn-primary btn-sm'>view</Link>
-                                <Link to="view" className='btn btn-warning btn-sm ms-2'>edit</Link>
-                                <Link to="view" className='btn btn-danger btn-sm ms-2'>del</Link>
+                                <Link to={`edit/${d.id}`} className='btn btn-warning btn-sm ms-2'>edit</Link>
+                                <button className='btn btn-danger btn-sm ms-2' onClick={e=> delrecord(d.id)}>del</button>
                             </td>
                             </tr>
                            ) 
